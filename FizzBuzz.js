@@ -37,7 +37,7 @@
 
 let n = 1;
 
-while (n <= 100) {
+/* while (n <= 100) {
     (n % 3 === 0 && n % 5 === 0) ?
         console.log('FizzBuzz') :
         (n % 3 === 0) ?
@@ -45,5 +45,10 @@ while (n <= 100) {
             (n % 5 === 0) ?
                 console.log('Buzz') :
                 console.log(n);
+    n++;
+} */
+
+while (n <= 100) {
+    console.log( `${n % 3 === 0 ? 'Fizz' : ''}${n % 5 === 0 ? 'Buzz' : ''}${n % 3 !== 0 && n % 5 !== 0 ? n : ''}` )
     n++;
 }
